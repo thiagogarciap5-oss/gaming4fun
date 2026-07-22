@@ -568,7 +568,7 @@
 
         <h2 class="section-title">▶ Puzzle Games</h2>
         <div class="game-grid" id="puzzle-games">
-            <a href="javascript:openGame('tetris')" class="game-card" data-game="tetris">
+            <a href="#" onclick="event.preventDefault(); try{openGame('tetris')}catch(e){console.error(e)}" class="game-card" data-game="tetris">
                 <span class="game-tag">Epic</span>
                 <div class="game-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
                     🧱
