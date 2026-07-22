@@ -1,0 +1,1 @@
+{"name":"gaming4fun","builds":[{"src":"games.html","use":"@vercel/static"}],"routes":[{"src":"/games.html","dest":"games.html"},{"src":"/","dest":"games.html"}]}
