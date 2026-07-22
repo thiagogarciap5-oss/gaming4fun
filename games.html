@@ -731,19 +731,29 @@
         }
 
         // Event listeners for game cards
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('DOM loaded, setting up event listeners');
-            document.querySelectorAll('.game-card').forEach(card => {
-                console.log('Adding listener to card:', card.getAttribute('data-game'));
-                card.addEventListener('click', function() {
-                    const game = this.getAttribute('data-game');
-                    console.log('Card clicked, game:', game);
+        function setupGameCards() {
+            console.log('Setting up game cards');
+            const cards = document.querySelectorAll('.game-card');
+            console.log('Found', cards.length, 'game cards');
+            cards.forEach(card => {
+                const game = card.getAttribute('data-game');
+                console.log('Card:', game);
+                card.onclick = function() {
+                    console.log('onclick fired for:', game);
                     if (game) openGame(game);
-                });
+                };
             });
             
-            document.querySelector('.close-btn').addEventListener('click', closeGame);
-        });
+            const closeBtn = document.querySelector('.close-btn');
+            if (closeBtn) closeBtn.onclick = closeGame;
+        }
+        
+        // Run setup when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupGameCards);
+        } else {
+            setupGameCards();
+        }
 
         const gameNames = {
             'snake': 'SNAKE',
