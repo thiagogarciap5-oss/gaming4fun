@@ -712,11 +712,11 @@
 
         // Modal controls
         function openGame(game) {
-            alert('Opening game: ' + game);
-            document.getElementById('game-modal').style.display = 'flex';
-            document.getElementById('game-modal').style.flexDirection = 'column';
-            document.getElementById('game-modal').style.alignItems = 'center';
-            document.getElementById('game-modal').style.justifyContent = 'center';
+            var modal = document.getElementById('game-modal');
+            modal.style.display = 'flex';
+            modal.style.flexDirection = 'column';
+            modal.style.alignItems = 'center';
+            modal.style.justifyContent = 'center';
             document.getElementById('modal-title').textContent = gameNames[game] || game.toUpperCase();
             initGame(game);
         }
