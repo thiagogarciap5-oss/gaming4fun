@@ -539,7 +539,7 @@
     <main>
         <h2 class="section-title">▶ Action Games</h2>
         <div class="game-grid" id="action-games">
-            <button class="game-card" onclick="openGame('geometry')">
+            <button class="game-card" data-game="geometry" onclick="openGame('geometry')">
                 <span class="game-tag">Hot</span>
                 <div class="game-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                     🚀
@@ -548,7 +548,7 @@
                 <p class="game-desc">Jump through obstacles to the beat</p>
             </button>
 
-            <button class="game-card" onclick="openGame('flappy')">
+            <button class="game-card" data-game="flappy" onclick="openGame('flappy')">
                 <span class="game-tag">Classic</span>
                 <div class="game-icon" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
                     🐦
@@ -557,7 +557,7 @@
                 <p class="game-desc">Navigate through endless pipes</p>
             </button>
 
-            <button class="game-card" onclick="openGame('snake')">
+            <button class="game-card" data-game="snake" onclick="openGame('snake')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);">
                     🐍
                 </div>
@@ -568,7 +568,7 @@
 
         <h2 class="section-title">▶ Puzzle Games</h2>
         <div class="game-grid" id="puzzle-games">
-            <button class="game-card" onclick="openGame('tetris')">
+            <button class="game-card" data-game="tetris" onclick="openGame('tetris')">
                 <span class="game-tag">Epic</span>
                 <div class="game-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
                     🧱
@@ -577,7 +577,7 @@
                 <p class="game-desc">Stack blocks, clear lines, score big</p>
             </button>
 
-            <button class="game-card" onclick="openGame('chess')">
+            <button class="game-card" data-game="chess" onclick="openGame('chess')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #78716c 0%, #57534e 100%);">
                     ♟️
                 </div>
@@ -585,7 +585,7 @@
                 <p class="game-desc">Classic strategy for two players</p>
             </button>
 
-            <button class="game-card" onclick="openGame('memory')">
+            <button class="game-card" data-game="memory" onclick="openGame('memory')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);">
                     🧠
                 </div>
@@ -593,7 +593,7 @@
                 <p class="game-desc">Find all matching pairs</p>
             </button>
 
-            <button class="game-card" onclick="openGame('minesweeper')">
+            <button class="game-card" data-game="minesweeper" onclick="openGame('minesweeper')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);">
                     💣
                 </div>
@@ -604,7 +604,7 @@
 
         <h2 class="section-title">▶ Creative Games</h2>
         <div class="game-grid" id="creative-games">
-            <button class="game-card" onclick="openGame('minecraft')">
+            <button class="game-card" data-game="minecraft" onclick="openGame('minecraft')">
                 <span class="game-tag">New</span>
                 <div class="game-icon" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
                     ⛏️
@@ -613,7 +613,7 @@
                 <p class="game-desc">Place blocks, create anything</p>
             </button>
 
-            <button class="game-card" onclick="openGame('pixelart')">
+            <button class="game-card" data-game="pixelart" onclick="openGame('pixelart')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);">
                     🎨
                 </div>
@@ -624,7 +624,7 @@
 
         <h2 class="section-title">▶ More Classics</h2>
         <div class="game-grid" id="classic-games">
-            <button class="game-card" onclick="openGame('pong')">
+            <button class="game-card" data-game="pong" onclick="openGame('pong')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);">
                     🏓
                 </div>
@@ -632,7 +632,7 @@
                 <p class="game-desc">Classic paddle vs paddle</p>
             </button>
 
-            <button class="game-card" onclick="openGame('breakout')">
+            <button class="game-card" data-game="breakout" onclick="openGame('breakout')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);">
                     🔨
                 </div>
@@ -640,7 +640,7 @@
                 <p class="game-desc">Smash bricks with a bouncing ball</p>
             </button>
 
-            <button class="game-card" onclick="openGame('spaceinvaders')">
+            <button class="game-card" data-game="spaceinvaders" onclick="openGame('spaceinvaders')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);">
                     👾
                 </div>
@@ -648,7 +648,7 @@
                 <p class="game-desc">Defend Earth from alien invasion</p>
             </button>
 
-            <button class="game-card" onclick="openGame('sudoku')">
+            <button class="game-card" data-game="sudoku" onclick="openGame('sudoku')">
                 <div class="game-icon" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
                     🔢
                 </div>
@@ -656,7 +656,7 @@
                 <p class="game-desc">Fill the grid with numbers 1-9</p>
             </button>
 
-            <button class="game-card" onclick="openGame('amongus')">
+            <button class="game-card" data-game="amongus" onclick="openGame('amongus')">
                 <span class="game-tag">Fun</span>
                 <div class="game-icon" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
                     🤖
@@ -705,8 +705,6 @@
         // Navigation
         function showCategory(cat) {
             document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
             document.querySelectorAll('.game-grid').forEach(grid => {
                 grid.style.display = 'all' === cat ? 'grid' : 'none';
             });
@@ -714,22 +712,34 @@
 
         // Modal controls
         function openGame(game) {
-            console.log('openGame called with:', game);
-            document.getElementById('game-modal').classList.add('active');
+            document.getElementById('game-modal').style.display = 'flex';
+            document.getElementById('game-modal').style.flexDirection = 'column';
+            document.getElementById('game-modal').style.alignItems = 'center';
+            document.getElementById('game-modal').style.justifyContent = 'center';
             document.getElementById('modal-title').textContent = gameNames[game] || game.toUpperCase();
-            console.log('About to call initGame');
             initGame(game);
-            console.log('initGame completed');
         }
 
         function closeGame() {
-            document.getElementById('game-modal').classList.remove('active');
+            document.getElementById('game-modal').style.display = 'none';
             if (gameLoop) {
                 cancelAnimationFrame(gameLoop);
                 gameLoop = null;
             }
             currentGame = null;
         }
+
+        // Event listeners for game cards
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.game-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const game = this.getAttribute('data-game');
+                    if (game) openGame(game);
+                });
+            });
+            
+            document.querySelector('.close-btn').addEventListener('click', closeGame);
+        });
 
         const gameNames = {
             'snake': 'SNAKE',
@@ -782,7 +792,6 @@
 
         // ==================== SNAKE ====================
         function initSnake(container) {
-            console.log('initSnake called, container:', container);
             const canvas = document.createElement('canvas');
             canvas.id = 'snake-canvas';
             canvas.width = 400;
