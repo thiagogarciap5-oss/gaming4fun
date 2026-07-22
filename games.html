@@ -714,9 +714,12 @@
 
         // Modal controls
         function openGame(game) {
+            console.log('openGame called with:', game);
             document.getElementById('game-modal').classList.add('active');
             document.getElementById('modal-title').textContent = gameNames[game] || game.toUpperCase();
+            console.log('About to call initGame');
             initGame(game);
+            console.log('initGame completed');
         }
 
         function closeGame() {
@@ -779,6 +782,7 @@
 
         // ==================== SNAKE ====================
         function initSnake(container) {
+            console.log('initSnake called, container:', container);
             const canvas = document.createElement('canvas');
             canvas.id = 'snake-canvas';
             canvas.width = 400;
