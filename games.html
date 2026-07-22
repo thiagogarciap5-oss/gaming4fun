@@ -732,9 +732,12 @@
 
         // Event listeners for game cards
         document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, setting up event listeners');
             document.querySelectorAll('.game-card').forEach(card => {
+                console.log('Adding listener to card:', card.getAttribute('data-game'));
                 card.addEventListener('click', function() {
                     const game = this.getAttribute('data-game');
+                    console.log('Card clicked, game:', game);
                     if (game) openGame(game);
                 });
             });
